@@ -31,3 +31,4 @@ document.addEventListener('DOMContentLoaded', () => {
   window.totalFrames = totalFrames;
   window.fps = fps;
 });
+

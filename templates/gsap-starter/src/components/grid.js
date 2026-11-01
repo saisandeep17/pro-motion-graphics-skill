@@ -16,3 +16,4 @@ export function renderGridLines(container, cols = 8, rows = 5) {
     container.appendChild(line);
   }
 }
+

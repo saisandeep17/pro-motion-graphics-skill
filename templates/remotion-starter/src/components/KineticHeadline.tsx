@@ -58,3 +58,4 @@ export const KineticHeadline: React.FC<{
     </div>
   );
 };
+

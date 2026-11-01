@@ -56,3 +56,4 @@ export function getCameraTransform(
 
   return `translate3d(${x.toFixed(2)}px, ${y.toFixed(2)}px, 0) scale(${scale.toFixed(4)})`;
 }
+

@@ -66,3 +66,4 @@ Use `scripts/inspect-output` to verify:
 - [ ] **Frame Rate**: Output file FPS matches configured composition FPS.
 - [ ] **Color Space**: Encoded as `yuv420p` for maximum web and mobile playback compatibility.
 - [ ] **Audio Stream**: Audio stream exists and is encoded as AAC (when audio was requested).
+

@@ -14,3 +14,4 @@ export function wrapLinesInMasks(lines, container) {
     container.appendChild(mask);
   });
 }
+

@@ -62,3 +62,4 @@ export const BRAND_CONFIG: BrandConfig = {
 export const calculateTotalFrames = (seconds: number, fps: number): number => {
   return Math.round(seconds * fps);
 };
+

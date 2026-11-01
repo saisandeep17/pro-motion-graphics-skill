@@ -3,3 +3,4 @@
   <rect x="2" y="2" width="96" height="96" rx="14" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
   <path d="M30 70 L30 30 L55 30 C65 30 70 35 70 42 C70 50 65 54 55 54 L30 54 M50 54 L70 70" fill="none" stroke="#FF4F00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
+

@@ -58,3 +58,4 @@ Pro Motion Graphics V2 transforms the repository from a collection of design gui
 
 ## [1.0.0] - 2026-11-01
 - Initial release of Pro Motion Graphics skill with Anti-Slop visual philosophy, Swiss color systems, and Remotion patterns.
+

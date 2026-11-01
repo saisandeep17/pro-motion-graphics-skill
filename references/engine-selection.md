@@ -95,3 +95,4 @@ Does the video require procedural math, 1,000+ particles, or physics simulation?
 1. **Never Force Remotion for a Simple Banner**: If a user asks for a 5-second animated typography banner to embed in a website, provide Engine B (HTML/CSS/GSAP), not a full 200MB Remotion repository.
 2. **Never Mix Engines Unnecessarily**: Keep compositions clean. Do not embed heavy 3D canvas libraries into Remotion unless the specific scene requires procedural simulation.
 3. **Always Parameterize Timeline Progress**: Regardless of engine, ensure all animations accept a normalized `progress` ($0.0 \to 1.0$) or an explicit integer `frame` count so the animation can be driven deterministically.
+

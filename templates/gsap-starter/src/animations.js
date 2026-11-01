@@ -64,3 +64,4 @@ export function buildMasterTimeline(fps = 60, durationInSeconds = 10) {
 
   return tl;
 }
+

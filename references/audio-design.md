@@ -102,3 +102,4 @@ export function getFadeOutVolume(frame: number, endFrame: number, fadeFrames = 4
    - Use authorized royalty-free repositories: Free Music Archive (CC0 / CC-BY), Pixabay Audio, Epidemic Sound, Artlist, or generated acoustic beds.
 2. **Attribution Tracking**:
    - If using Creative Commons (CC-BY) assets, list the artist, track title, and license URL in the project handoff `README.md`.
+

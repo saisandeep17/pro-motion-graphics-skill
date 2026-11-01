@@ -166,3 +166,4 @@ if (errors === 0) {
   logFail(`Video validation FAILED with ${errors} error(s) and ${warnings} warning(s).`);
   process.exit(1);
 }
+

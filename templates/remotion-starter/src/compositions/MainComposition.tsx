@@ -128,3 +128,4 @@ export const MainComposition: React.FC = () => {
     </AbsoluteFill>
   );
 };
+

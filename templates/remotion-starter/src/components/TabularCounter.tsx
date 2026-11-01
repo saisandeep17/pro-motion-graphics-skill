@@ -54,3 +54,4 @@ export const TabularCounter: React.FC<{
     </span>
   );
 };
+

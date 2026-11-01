@@ -17,3 +17,4 @@ export const BRAND_CONFIG = {
     mono: '"JetBrains Mono", monospace',
   },
 };
+

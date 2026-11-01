@@ -188,3 +188,4 @@ if (errors === 0) {
   logFail(`Validation completed with ${errors} error(s) and ${warnings} warning(s).`);
   process.exit(1);
 }
+

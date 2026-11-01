@@ -25,3 +25,4 @@ npm run still
 - `src/components/`: Reusable architectural components (Grid, KineticHeadline, TabularCounter, Card, Cursor).
 - `src/compositions/`: Scene sequences and main video timeline.
 - `public/`: Brand assets (logos, images, fonts).
+

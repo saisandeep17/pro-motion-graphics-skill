@@ -231,3 +231,4 @@ async function renderGsapVideo(htmlPath, outPath = 'out/video.mp4', fps = 60, to
   console.log(`Rendered: ${outPath}`);
 }
 ```
+

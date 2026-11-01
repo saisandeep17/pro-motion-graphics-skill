@@ -20,3 +20,4 @@ document.addEventListener('DOMContentLoaded', () => {
   window.totalFrames = duration * fps;
   window.fps = fps;
 });
+

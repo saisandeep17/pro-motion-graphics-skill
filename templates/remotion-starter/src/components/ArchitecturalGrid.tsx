@@ -50,3 +50,4 @@ export const ArchitecturalGrid: React.FC<{
     </AbsoluteFill>
   );
 };
+

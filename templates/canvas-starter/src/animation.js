@@ -56,3 +56,4 @@ export function renderFrameAt(renderer, scene, frame, totalFrames) {
 function heightMinus(h, diff) {
   return h - diff;
 }
+

@@ -15,3 +15,4 @@ npm run dev
 ## Deterministic Video Capture
 
 The renderer exposes `window.renderFrame(frameNumber)` to allow automated headless capture tools (Puppeteer) to snapshot each frame deterministically without jitter.
+

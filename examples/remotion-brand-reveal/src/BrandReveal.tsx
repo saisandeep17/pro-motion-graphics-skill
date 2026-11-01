@@ -59,3 +59,4 @@ export const BrandReveal: React.FC = () => {
     </AbsoluteFill>
   );
 };
+

@@ -18,3 +18,4 @@ npm run build
 ## Deterministic Video Capture
 
 The master timeline exposes `window.seekFrame(frameNumber)` for frame-by-frame rendering with headless Puppeteer / Playwright.
+

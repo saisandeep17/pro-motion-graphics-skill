@@ -140,3 +140,4 @@ export const ArchitecturalLayer: React.FC<{
 - [ ] Diagram complexity builds progressively (never show a 20-node graph all at once).
 - [ ] Connectors draw in direction of data flow (left to right or top to bottom).
 - [ ] Spoken narration matches screen animations with $\pm 5$ frame accuracy.
+

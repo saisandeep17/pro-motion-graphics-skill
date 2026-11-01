@@ -87,3 +87,4 @@ export class CanvasRenderer {
     this.ctx.fillText(text, x, y);
   }
 }
+

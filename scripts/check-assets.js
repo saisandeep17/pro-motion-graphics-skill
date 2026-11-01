@@ -134,3 +134,4 @@ if (errors === 0) {
   logFail(`Asset verification failed with ${errors} missing or broken asset(s).`);
   process.exit(1);
 }
+
