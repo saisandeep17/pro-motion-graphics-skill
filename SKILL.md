@@ -1,92 +1,118 @@
 ---
 name: pro-motion-graphics
-description: Create studio-grade motion graphic videos in Remotion or HTML/CSS/SVG without AI slop. Includes asset discovery and playbooks for Reels, Brand Promos, Launch Videos, and UI Demos.
+description: Create studio-grade, deterministic motion graphics and programmatic videos in Remotion, HTML/CSS/GSAP, or HTML5 Canvas without AI slop. Features multi-engine routing, 10-stage production pipeline, anti-slop visual rules, and category playbooks for Reels, Launches, Brand Manifestos, Kinetic Typography, and Explainers.
 ---
 
-# Pro Motion Graphics
+# Pro Motion Graphics (V2 Architecture)
 
-Build crisp, deterministic, studio-grade motion graphic videos that look crafted by a senior motion designer. This skill enforces strict anti-slop visual standards, exact numerical physics, and interactive asset collection across dedicated video categories.
+Build crisp, deterministic, studio-grade motion graphic videos that look crafted by a senior technical motion director. This skill enforces strict anti-slop visual standards, mathematical physics, multi-engine routing, and an end-to-end 10-stage production pipeline.
 
-## When to Use
+---
 
-- Generating programmatic motion graphic videos (Remotion, React, HTML/CSS/GSAP, or HTML5 Canvas/SVG).
-- Designing vertical social videos (Reels, TikToks, Shorts), Brand Promos, SaaS Launch Videos, or Kinetic Typography.
-- Refactoring existing animations that look like "AI slop" (excessive blur, neon glows, generic gradients, mechanical linear easing).
-- Planning frame-accurate storyboards and motion choreography before writing code.
+## When to Activate This Skill
 
-## Model Optimization Rules (Sonnet & Haiku)
+- Generating programmatic video code (Remotion / React, HTML/CSS/SVG + GSAP, or HTML5 Canvas).
+- Building video categories: Social Reels/Shorts (`9:16`), Brand Promos (`16:9` / `1:1`), SaaS Product Launches, UI Micro-Demos, Cinematic Kinetic Typography, or Technical Explainers.
+- Refactoring animations that look like "AI slop" (muddy blur blobs, neon mesh glows, generic gradients, unanchored CSS fades, mechanical linear easing).
+- Planning frame-accurate storyboards, mathematical timing, and sound design synchronization before writing code.
 
-Follow these execution constraints to maximize speed, accuracy, and visual quality on Sonnet and Haiku models:
+---
 
-1. **Numbers Over Adjectives**: Never make subjective styling decisions in prose. Translate every design choice directly into exact numerical tokens (frame counts, spring `stiffness`/`damping`, cubic-bezier arrays, pixel grids, and hex/OKLCH values).
-2. **Two-Phase Execution**: Do not dump 500 lines of animation code on the first turn if assets or brand tokens are missing. Execute **Step 1 (Category & Asset Check)** first, confirm or define fallback tokens, then generate modular scene code.
-3. **Deterministic Frame Math**: Every animation must be driven by a deterministic `frame` variable or explicit timeline progress (`0` to `1`). Never use unseeded `Math.random()`, `setTimeout`, or CSS `infinite` animations that desynchronize during video rendering.
-4. **GPU-Safe Properties Only**: Animate `transform` (`translate3d`, `scale`, `rotate`) and `opacity` or SVG `stroke-dashoffset` / `clip-path`. Avoid animating `width`, `height`, `top`, `left`, or heavy `filter: blur()` per frame.
+## Model Execution Rules (Sonnet & Haiku Optimized)
 
-## Step 1: Category Routing & Interactive Asset Discovery
+1. **Numbers Over Adjectives**: Translate all aesthetic intentions directly into exact numerical tokens (frame counts, spring `stiffness`/`damping`, cubic-bezier curves, 8px grid increments, and hex/OKLCH colors). Never describe visual polish with vague adjectives.
+2. **Deterministic Frame Math**: Every animation must be driven strictly by a `frame` variable or explicit timeline `progress` ($0.0 \to 1.0$). Never use unseeded `Math.random()`, `setTimeout`, or unanchored CSS `infinite` keyframes that desynchronize during rendering.
+3. **GPU-Safe Properties Only**: Animate `transform` (`translate3d`, `scale`, `rotate`), `opacity`, `clip-path`, or SVG `stroke-dashoffset`. Never animate `width`, `height`, `top`, `left`, or heavy `filter: blur()` per frame.
+4. **React Rules of Hooks Hygiene**: In Remotion, `spring()` is a pure calculation function. Never prefix mathematical helpers with `use` (e.g. use `getStaggerSpringProgress()`, not `useStaggerSpring()`) to avoid React Rules of Hooks violations inside `.map()` loops.
 
-Before writing code, classify the user's request into one of the four categories in `references/category-playbooks.md` and check if critical user assets are missing.
+---
 
-### Asset Discovery Protocol
+## Multi-Engine Routing Matrix
 
-If the user has not provided brand details or required visual assets for their chosen category, pause and ask a concise, structured question (max 4 bullet points) before generating the final code:
+Before generating project code, evaluate the brief against the **[Multi-Engine Selection Guide](references/engine-selection.md)**:
 
-- **Brand & Palette**: "Do you have a brand hex/OKLCH palette and font name, or should I apply a curated studio palette (e.g., Swiss Technical Dark, Editorial Warm Paper, or High-Contrast Kinetic Mono)?"
-- **Visual Assets**:
-  - For **Launch Videos / UI Demos**: "Please upload or describe your product UI screenshots, SVG logo, or key interface metrics so I can build authentic components instead of generic placeholder boxes."
-  - For **Brand Promos**: "Do you have an SVG logo path or specific brand taglines to anchor the reveal?"
-  - For **Reels / Shorts**: "What is the exact 3-second hook headline and target aspect ratio (`9:16` 1080x1920 at 60fps default)?"
-- **Fast-Track Fallback**: Always let the user know: *"Reply with your assets, or say 'use studio defaults' and I will generate crisp vector/UI components immediately."*
+- **Engine A: Remotion (React)**: Best for complex UI mockups, SaaS launches, modular multi-scene videos, data-driven reels, and frame-accurate CLI rendering.
+- **Engine B: HTML/CSS/SVG + GSAP**: Best for kinetic typography, editorial brand manifestos, SVG logo stroke animations, and lightweight browser playback. See **[GSAP Patterns](references/gsap-patterns.md)**.
+- **Engine C: HTML5 Canvas**: Best for procedural graphics, particle networks, mathematical animations, and generative visual effects.
 
-## Step 2: Enforce Anti-Slop Aesthetic Guardrails
+---
 
-Consult `references/anti-slop-rules.md` for full token tables. Every scene must pass these mandatory quality gates:
+## The 10-Stage Video Production Pipeline
 
-1. **Ban Generic Glows & Blurs**:
-   - Do not put `filter: blur()` blobs floating behind text.
-   - Do not use heavy neon `box-shadow` or glassmorphism (`backdrop-filter: blur()`) on every card.
-   - Build depth through **1px solid hairline borders** (`rgba(255,255,255,0.10)` on dark, `rgba(0,0,0,0.08)` on light), crisp **2px hard offset shadows** or subtle multi-layered contact shadows, and **solid surface layering** (3% to 5% lightness steps).
-2. **Ban the AI Purple-to-Blue Gradient**:
-   - Never default to `#8B5CF6` -> `#3B82F6` or rainbow mesh backgrounds.
-   - Use restrained, high-contrast palettes: 1 dominant background neutral (tinted with 0.01-0.02 chroma), 1 crisp foreground ink, and **1 intentional accent color** used on maximum 10% of the canvas.
-3. **Concentric Geometry & Strict Grids**:
-   - Whenever a card or container has padding, calculate nested corner radii mathematically: `R_inner = max(0, R_outer - Padding)`.
-   - Align all typography and cards to an explicit 8px structural grid or visible 1px architectural grid lines.
-4. **Typography That Commands Space**:
-   - Pair a tight, heavy display font (`letter-spacing: -0.04em`, `line-height: 0.95`) with a technical monospace label font (`uppercase`, `letter-spacing: 0.08em`, `font-variant-numeric: tabular-nums`).
-   - Never use default system copy ("Unlock Seamless Next-Gen AI", "Supercharge Your Workflow", or sparkle emojis). Write sharp, concrete product copy with real numbers and nouns.
+Follow these sequential stages for every project:
 
-## Step 3: Choreograph Physics & Pacing
+### Stage 1: Understand the Brief
+Identify target platform, aspect ratio, duration ($t$), FPS, core message, visual tone, and available assets. Ask only essential missing questions (max 4 bullets). If details are unspecified, apply studio defaults:
+- Aspect Ratio: `16:9` (`1920x1080`) for Desktop/Web; `9:16` (`1080x1920`) for Social.
+- Framerate: `60fps` for UI & Social; `30fps` for Editorial & Explainers; `24fps` for Cinematic Type.
 
-Never use `linear` or default `ease` transitions. Every element must move with physical intent:
+### Stage 2: Category Routing
+Map request to one of the 6 category blueprints in **[Category Playbooks](references/category-playbooks.md)**:
+- **Category A**: Social Reels, TikToks & Shorts (`9:16`, 60fps, 12s–30s)
+- **Category B**: Brand Promotion & Manifesto (`16:9` / `1:1`, 30fps, 20s–45s)
+- **Category C**: SaaS Product Launch Video (`16:9`, 60fps, 45s–90s)
+- **Category D**: Feature Highlight / UI Micro-Demo (`1:1` / `4:5`, 60fps, 10s–25s)
+- **Category E**: Cinematic Kinetic Typography (`16:9` / `9:16`, 24/30fps, 15s–45s)
+- **Category F**: Explainer & Educational Videos (`16:9`, 30/60fps, 45s–120s). Detailed in **[Explainer Playbook](references/explainer-playbook.md)**.
 
-- **Spring Presets (Remotion / React Spring)**:
-  - `SNAPPY_UI` (Cards, badges, switches): `{ stiffness: 220, damping: 24, mass: 1 }`
-  - `HERO_REVEAL` (Main headlines, product frames): `{ stiffness: 140, damping: 20, mass: 1.1 }`
-  - `WHIP_TRANSITION` (Scene wipes, camera pans): `{ stiffness: 300, damping: 30, mass: 0.8 }`
-- **Bezier Presets (CSS / GSAP)**:
-  - `EXPO_OUT` (Crisp entrances): `cubic-bezier(0.16, 1, 0.3, 1)`
-  - `QUART_IN_OUT` (Camera zooms & match cuts): `cubic-bezier(0.76, 0, 0.24, 1)`
-- **Three Laws of Studio Motion**:
-  1. **Compound Entrances**: Combine at least two properties (e.g., `translateY(24px -> 0)` + `opacity(0 -> 1)` or `clip-path: inset(100% 0 0 0)` -> `inset(0% 0 0 0)`).
-  2. **Staggered Hierarchy**: Never animate a group simultaneously. Offset children by `3` to `5` frames (`50ms` to `85ms`) in reading order.
-  3. **Continuous Momentum & Varied Beats**: Never repeat the exact same entrance pattern in two consecutive scenes. If Scene 1 slides up, Scene 2 should whip-pan horizontally, scale from an anchor point, or reveal via a geometric mask.
+### Stage 3: Asset Discovery & Verification
+Collect authentic brand assets (logos, UI screenshots, fonts, color palettes).
+- Maintain genuine brand logos intact without distorting aspect ratio.
+- Never replace real product screenshots with fabricated placeholder UI when authentic screenshots are supplied.
+- Verify asset paths using `scripts/check-assets`.
 
-## Step 4: Apply Category Playbook & Render Code
+### Stage 4: Storyboard Planning & Mathematical Timing
+Build an explicit timeline table calculating frame numbers from seconds and FPS:
+$$\text{frame} = \text{round}(t \times fps)$$
+Define scene start/end times, visual descriptions, camera transitions, and audio cues. Ensure scene durations match the total target duration without accidental overlaps.
 
-Load the specific category blueprint from `references/category-playbooks.md` and code templates from `references/remotion-patterns.md`:
+### Stage 5: Centralized Design System (`BRAND_CONFIG`)
+Establish design tokens before writing scene JSX/HTML:
+- Colors: Pick one curated system from **[Anti-Slop Rules](references/anti-slop-rules.md)** (Swiss Technical Dark, Editorial Warm Paper, or Kinetic Mono).
+- Typography: Follow **[Typography Guide](references/typography-guide.md)** (Display with negative tracking `-0.04em` + Monospace metadata with positive tracking `+0.08em` + `tabular-nums`).
+- Geometry: Enforce concentric corner radius math: $R_{inner} = \max(0, R_{outer} - Padding)$.
 
-- **Category A: Social Reels & Shorts (`9:16`, 1080x1920, 60fps, 15-30s)** -> Frame-0 visual hook, safe-zone margins, kinetic word locks, rapid 45-frame beat changes.
-- **Category B: Brand Promotion & Manifesto (`16:9` or `1:1`, 30fps, 30-45s)** -> Editorial Swiss grid, masked typography reveals, tactile surface flips, vector SVG stroke-dashoffset logo lockup.
-- **Category C: Product Launch Video (`16:9`, 1920x1080, 60fps, 45-90s)** -> Problem-to-Click arc, 2D/2.5D layered UI reconstruction, choreographed cursor path, camera zoom-to-detail (`scale(1 -> 2.2)`), tabular number counters.
-- **Category D: Feature Highlight / UI Micro-Demo (`1:1` or `4:5`, 60fps, 15-30s)** -> Single-feature isolation, interactive state transitions, macro focus pull (dimming background opacity to `0.25` instead of heavy blur).
+### Stage 6: Modular Production Code
+Generate clean, modular code based on the chosen engine starter in `templates/`:
+- `templates/remotion-starter/`: Modular Remotion composition with `config.ts`, `motion.ts`, and components.
+- `templates/gsap-starter/`: Frame-deterministic GSAP timeline setup.
+- `templates/canvas-starter/`: Procedural 2D canvas draw loop.
+Verify structure with `scripts/validate-project`.
 
-## Step 5: Self-Audit Checklist
+### Stage 7: Audio & Sound Design
+Incorporate sound layers following **[Audio Design Guide](references/audio-design.md)**:
+- Duck background music by 12–16dB during spoken voiceover segments.
+- Align transition whooshes 2 frames before visual midpoint; align impact thuds to exact visual contact frame.
+- Ensure all music is royalty-free / licensed for commercial use.
 
-Before outputting the final code, verify every item:
+### Stage 8: Rendering & Encoding
+Render using high-quality deterministic settings:
+```bash
+# Remotion High-Quality Web MP4 (H.264, CRF 18, YUV420P)
+npx remotion render src/index.ts MainComposition out/video.mp4 --codec=h264 --crf=18
+```
 
-- [ ] Zero generic `filter: blur()` glow blobs or purple-to-blue gradients.
-- [ ] All animations driven deterministically by `frame` or explicit timeline progress.
-- [ ] Inner border radii follow `R_inner = R_outer - Padding`.
-- [ ] Every scene transition changes spatial direction or scale rhythm.
-- [ ] Missing user assets (logos, screenshots, brand colors) are either collected or cleanly parameterized at the top of the file as a `BRAND_CONFIG` object for easy swap-in.
+### Stage 9: Visual Quality Assurance
+Execute **[Video Quality Checklist](references/video-quality-checklist.md)**:
+- Render still preview frames at 25%, 50%, 75%, and 100% duration (`npx remotion still ... --frame=N`).
+- Audit text clipping, 8px grid alignment, contrast ratios, and safe zones (`9:16` top 220px / bottom 340px).
+- Verify final video output using `scripts/inspect-output out/video.mp4`.
+
+### Stage 10: Delivery & Handoff
+Provide:
+1. Rendered video output file (or exact reproducible render command).
+2. Clean source project matching template architecture.
+3. Referenced assets organized in `public/`.
+4. Run instructions and verification logs.
+
+---
+
+## Mandatory Quality Gates
+
+Before concluding any motion graphics task, verify:
+- [ ] No generic `filter: blur()` blobs or purple-to-blue AI gradients.
+- [ ] No React Rules of Hooks violations (use pure helpers like `getStaggerSpringProgress`).
+- [ ] All animations driven deterministically by `frame` or normalized `progress`.
+- [ ] `node scripts/validate-project.js <project-dir>` exits with code 0.
+- [ ] `node scripts/check-assets.js <project-dir>` exits with code 0.
+- [ ] Render output verified via `node scripts/inspect-output.js <output-path>`.

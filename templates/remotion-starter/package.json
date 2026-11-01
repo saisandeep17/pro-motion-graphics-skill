@@ -1,0 +1,22 @@
+{
+  "name": "remotion-starter",
+  "version": "2.0.0",
+  "description": "Production-grade Remotion starter template with Anti-Slop motion graphics architecture",
+  "scripts": {
+    "start": "remotion preview src/index.ts",
+    "build": "remotion render src/index.ts MainComposition out/video.mp4",
+    "render": "remotion render src/index.ts MainComposition out/video.mp4 --codec=h264 --crf=18",
+    "still": "remotion still src/index.ts MainComposition out/preview.png --frame=60",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.230"
+  },
+  "devDependencies": {
+    "@remotion/cli": "^4.0.230",
+    "@types/react": "^18.3.3",
+    "typescript": "^5.4.5"
+  }
+}

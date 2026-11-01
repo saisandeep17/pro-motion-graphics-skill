@@ -1,0 +1,13 @@
+{
+  "name": "canvas-starter",
+  "version": "2.0.0",
+  "description": "Production-grade HTML5 Canvas procedural motion graphics starter with Anti-Slop architecture",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  }
+}
